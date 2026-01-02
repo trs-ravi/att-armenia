@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f6ef;
+}
+
+.form-select:focus {
+    box-shadow: none!important;
+    border-color: none!important;
+    outline: 0px;
+}
+
+h1,h2,h3{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.intro_hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('../images/home_slider/upk4haIE.jpg') center/cover no-repeat;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* Header */
+.top-header {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    right: 50px;
+    z-index: 10;
+}
+
+.logo .logo_img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.language span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Center text */
+.center-content {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    z-index: 5;
+}
+
+.center-content h1 {
+    font-size: 52px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.center-content h2 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.center-content p {
+    opacity: 0.9;
+    font-size: 22px;
+}
+
+/* Map */
+.map-wrapper {
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.map-image {
+    width: 500px;
+    opacity: 0.5;
+}
+
+.map-label {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ================= LEFT CARDS ================= */
+
+.left-cards {
+    position: absolute;
+    top: 25%;
+    left: 40px;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Card base */
+.info-card {
+    /* background: rgba(255,255,255,0.15); */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px 10px 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(0.92);
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+/* Hover effect */
+.info-card:hover {
+    opacity: 0.7;
+    /* transform: scale(1.02); */
+}
+
+/* Active card */
+.info-card.active {
+    opacity: 0.7;
+    /* transform: scale(1.08); */
+    /* background: rgba(242,240,239,.5); */
+    padding: 40px 10px;
+}
+
+/* Large card */
+/* .info-card.large {
+    width: 240px;
+} */
+
+.info-card.large img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card_two, .card_four{
+    margin-left: 10%;
+}
+.card_three{
+    background: url('../images/home_slider/upk4haIE.jpg') center/cover no-repeat;
+    /* background: rgba(255,255,255,0.35); */
+    margin-left: 25%;
+}
+/* .card_three::after{
+    content: '';
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+
+.info-card p{
+    display: none;
+    margin-bottom: 0;
+}
+.info-card h5{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.info-card.active h5{
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.info-card.active p{
+    display: block;
+    color: #000;
+}
+
+/* ================= ARROWS ================= */
+
+.card-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 6px; */
+    position: absolute;
+    top: 40%;
+}
+
+.card-arrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-arrow:hover {
+    background: rgba(255,255,255,0.45);
+}
+
+
+/* Right menu */
+.right-menu {
+        position: absolute;
+        top: 32%;
+        right: -10px;
+        z-index: 6;
+        border: 1px solid #FFF;
+        border-radius: 15px;
+        padding: 20px 0;
+}
+
+.right_menuText{
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.right-menu a {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* background: rgba(255,255,255,0.2); */
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #000;
+    text-decoration: none;
+    width: 250px;
+    margin-left: -20px;
+}
+
+/* Visit section */
+.visit {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    z-index: 6;
+}
+
+.visit a {
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.arrow_down{
+    margin-top: 15px;
+}
+
+.arrow_down img{
+    width: 20px;
+}
+
+
+/* culture page  */
+
+.logo .logo_img_web {
+    width: 125px;
+    filter: brightness(0) invert(1);
+}
+
+/* HERO */
+.culture_hero-section {
+    position: relative;
+    height: 680px;
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    background-size: cover; 
+    background-position: top;
+    z-index: -1;
+}
+
+.culture_hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    color: #fff;
+}
+
+.top-nav .menu {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    margin: 0;
+}
+
+/* THUMBNAILS */
+.thumb-section {
+    margin-top: -60px;
+    margin-bottom: 40px;
+    margin-left: 175px;
+}
+
+.thumb {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* CONTENT */
+.content-section {
+    padding: 50px 0;
+}
+
+.section-subtitle {
+    color: #5fa8d3;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* SIDEBAR */
+.advertisement {
+    background: #EFEFEF;
+    padding: 40px 25px;
+    border-top: 3px solid #5fa8d3;
+}
+
+.advertisement h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5fa8d3;
+}
+
+/* SOCIAL */
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    background: #cfd8dc;
+    padding: 6px 10px;
+    border-radius: 50%;
+    color: #333;
+}
+
+/* FOOTER IMAGE */
+.footer-image{
+    padding-top: 30px;
+}
+
+.footer-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/*--------------------------- Gastronomy Section --------------------------*/
+
+
+/* HERO */
+.hero-section {
+    position: relative;
+    height: 70vh;
+    background: url('../images/gastronomy.png') center/cover no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 69%;
+    transform: translateY(-70%);
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* .scroll-down {
+    position: relative;
+} */
+
+.scroll-down span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    display: inline-block;
+    background: rgba(95, 168, 211, .7);
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 8px;
+}
+
+/* CONTENT */
+.content-section {
+    padding: 50px 40px;
+}
+
+/* FILTER */
+.filter-bar .btn, .filter-bar select {
+    border-radius: 30px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.filter-select {
+    max-width: 180px;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+
+/* CARD */
+.grid_card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: relative;
+    height: 100%;
+}
+
+.grid_card_body{
+    padding: 0px 25px 30px 25px;
+}
+
+.grid_card img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.grid_card h5 {
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 10px;
+    color: #5fa8d3;
+    text-align: center;
+}
+
+.grid_card h6 {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.grid_card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.plus-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: rgba(95, 168, 211, .4);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* PAGINATION */
+.pagination-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page {
+    width: 32px;
+    height: 32px;
+    background: #e9e4d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page.active {
+    background: #4c7aa9;
+    color: #fff;
+}
