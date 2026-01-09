@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Culture Page</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -17,68 +23,83 @@
     <!-- <div class="overlay"></div> -->
     <div class="container-fluid">
         <nav class="top-nav">
-            <div class="logo"><img src="images/att_armnia01_Transparent_TextCouleur_opt.png" class="logo_img_web" alt=""></div>
-            <ul class="menu">
-                <li>Home</li>
-                <li>The Country</li>
-                <li>Useful</li>
-                <li>Gallery</li>
-                <li>My Space</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+            <a href="home.html" class="logo">
+                <img src="images/att_armnia01_Transparent_TextCouleur_opt.png" class="logo_img_web" alt="">
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu -->
+            <ul class="menu" id="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The Country</a></li>
+                <li><a href="#">Useful</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">My Space</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 </section>
 
 <!-- THUMBNAILS -->
-<section class="thumb-section container">
-    <div class="row ml-5">
-        <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
-        <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
-        <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
-        <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
+<section class="thumb-section content-section">
+    <div class="container-fluid">
+        <div class="row ml-5">
+            <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
+            <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
+            <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
+            <div class="col-auto"><img src="images/thumb1.png" class="thumb"></div>
+        </div>
     </div>
 </section>
 
 <!-- MAIN CONTENT -->
-<section class="content-section container">
-    <div class="row">
-        <!-- LEFT CONTENT -->
-        <div class="col-lg-9 col-12">
-            <h2 class="section-subtitle">Our Culture</h2>
-            <h4 class="section-title">TITLE</h4>
+<section class="content-section">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-9 col-12">
+                <h2 class="section-subtitle">Our Culture</h2>
+                <h4 class="section-title">TITLE</h4>
 
-            <p>
-                Suspendisse eget massa sapien. Aliquam diam massa, venenatis mollis tellus ac,
-                sodales finibus sem. Nam fermentum nulla sit amet lectus cursus facilisis.
-            </p>
+                <p>
+                    Suspendisse eget massa sapien. Aliquam diam massa, venenatis mollis tellus ac,
+                    sodales finibus sem. Nam fermentum nulla sit amet lectus cursus facilisis.
+                </p>
 
-            <p>
-                Donec aliquam mauris massa, sit amet varius risus vulputate id. Sed laoreet
-                fringilla sem, nec egestas sem suscipit at.
-            </p>
+                <p>
+                    Donec aliquam mauris massa, sit amet varius risus vulputate id. Sed laoreet
+                    fringilla sem, nec egestas sem suscipit at.
+                </p>
 
-            <p>
-                Nam in diam sed lorem rutrum blandit. Donec dictum lorem non ligula gravida,
-                sed ultrices diam dictum.
-            </p>
+                <p>
+                    Nam in diam sed lorem rutrum blandit. Donec dictum lorem non ligula gravida,
+                    sed ultrices diam dictum.
+                </p>
 
-            <div class="social-icons">
-                <span>Share</span>
-                <a href="#">F</a>
-                <a href="#">in</a>
-                <a href="#">G+</a>
+                <div class="social-icons">
+                    <span>Share</span>
+                    <a href="#">F</a>
+                    <a href="#">in</a>
+                    <a href="#">G+</a>
+                </div>
             </div>
-        </div>
 
-        <!-- RIGHT SIDEBAR -->
-        <div class="col-lg-3 col-12">
-            <div class="advertisement">
-                <h2 class="text-center" style="color: #5fa8d3;">Advertisement</h2>
-                <img src="images/thumb1.png" class="img-fluid mb-3">
-                <img src="images/thumb1.png" class="img-fluid mb-3">
-                <img src="images/thumb1.png" class="img-fluid mb-3">
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-lg-3 col-12">
+                <div class="advertisement">
+                    <h2 class="text-center" style="color: #5fa8d3;">Advertisement</h2>
+                    <img src="images/thumb1.png" class="img-fluid mb-3">
+                    <img src="images/thumb1.png" class="img-fluid mb-3">
+                    <img src="images/thumb1.png" class="img-fluid mb-3">
+                </div>
             </div>
         </div>
     </div>
@@ -89,5 +110,8 @@
     <img src="images/footer.png" alt="">
 </section>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

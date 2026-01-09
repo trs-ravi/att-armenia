@@ -52,4 +52,16 @@ $(document).ready(function () {
     //     alert('Link clicked');
     // });
 
+        $('#hamburger').on('click', function () {
+        $('#mainMenu').toggleClass('active');
+    });
 });
+
+
+
+
+
+
+
+
+
